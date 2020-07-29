@@ -8,7 +8,7 @@ node(){
             powershell 'npm install'
             echo 'Modules installed'
         }
-        
+       
     }
     stage('Build') {
         nodejs('nodejs') {
