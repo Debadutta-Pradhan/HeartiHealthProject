@@ -20,8 +20,8 @@ node(){
    stage('Build images') {
 	      steps {
 		bat '''
-			  cd sm-shop
-			  docker build -f "Dockerfile" -t lalitha13/shopizer-app:latest .
+			  cd /home/bitname/HeartiHealthProject
+			  docker build -f "Dockerfile" -t lalitha13/hearti-health-app:latest .
 			 
 		  
 		'''
@@ -31,7 +31,7 @@ node(){
 	  steps{
 		    withDockerRegistry([ credentialsId: "docker_hub", url: "" ]){
 			
-			bat "docker push lalitha13/shopizer-app:latest"   
+			bat "docker push lalitha13/hearti-health-app:latest"   
 	  	   }
 	   }
        } 
