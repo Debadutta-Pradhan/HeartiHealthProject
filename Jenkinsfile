@@ -21,7 +21,7 @@ node(){
 	      steps {
 		bat '''
 			 
-			  docker build -f "Dockerfile" -t lalitha13/hearti-health-app:latest .
+			  docker build -f "dockerfile" -t lalitha13/hearti-health-app:latest .
 			 
 		  
 		'''
