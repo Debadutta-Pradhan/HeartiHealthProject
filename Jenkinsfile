@@ -26,15 +26,6 @@ node(){
 		  
 		'''
 	      }
-       }
- stage('Push Docker image') {
-	  steps{
-		    withDockerRegistry([ credentialsId: "docker_hub", url: "" ]){
-			
-			bat "docker push lalitha13/hearti-health-app:latest"   
-	  	   }
-	   }
-       } 
-      
+      }     
 }
     
