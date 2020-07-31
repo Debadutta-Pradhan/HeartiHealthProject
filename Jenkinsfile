@@ -20,7 +20,7 @@ node(){
    stage('Build images') {
 	      steps {
 		bat '''
-			  cd /home/bitname/HeartiHealthProject
+			 
 			  docker build -f "Dockerfile" -t lalitha13/hearti-health-app:latest .
 			 
 		  
