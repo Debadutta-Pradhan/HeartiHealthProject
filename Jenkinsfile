@@ -27,5 +27,14 @@ node(){
 		'''
 	      }
        }
+ stage('Push Docker image') {
+	  steps{
+		    withDockerRegistry([ credentialsId: "Docker_Hub", url: "" ]){
+			
+			bat "docker push lalitha13/shopizer-app:latest"   
+	  	   }
+	   }
+       } 
+      
 }
     
