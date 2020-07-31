@@ -17,5 +17,15 @@ node(){
         }
         
     }
+   stage('Build images') {
+	      steps {
+		bat '''
+			  cd sm-shop
+			  docker build -f "Dockerfile" -t lalitha13/shopizer-app:latest .
+			 
+		  
+		'''
+	      }
+       }
 }
     
